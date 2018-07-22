@@ -1,0 +1,22 @@
+﻿@model FrontEndFeature.Models.FormDataModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyForm</title>
+</head>
+<body>
+    <form asp-action="index" method="post">
+        <label asp-for="FormString">Any string (keep it clean):</label>
+        <input asp-for="FormString" />
+        <button type="submit">Submit</button>
+    </form>
+    <p>Click <a asp-controller="MyIndex" asp-action="index">here</a> to go to the index page.</p>
+</body>
+</html>

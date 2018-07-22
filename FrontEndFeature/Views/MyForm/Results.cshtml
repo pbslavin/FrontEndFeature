@@ -1,0 +1,24 @@
+﻿@model IEnumerable<FrontEndFeature.Models.FormDataModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Results</title>
+</head>
+<body>
+    <table>
+        @foreach (FrontEndFeature.Models.FormDataModel f in Model)
+        {
+        <tr>
+            <td>@f.FormString</td>
+        </tr>
+        }
+    </table>
+    <a asp-action="index">Add more strings</a>
+</body>
+</html>
